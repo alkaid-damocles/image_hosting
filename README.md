@@ -4,6 +4,7 @@
 填写自己的腾讯云cos  id  key 存储桶配置, 然后编译就可
 
 
+
 让 go build 生成的可执行文件对 Mac、linux、Windows 平台一致
 让 go build 生成的可执行文件对 Mac、linux、Windows 平台一致
  
