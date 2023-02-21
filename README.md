@@ -9,9 +9,6 @@
  
 
 要做到这一点，使用的是交叉编译选项。
-
- 
-
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build main.go
 
 CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
