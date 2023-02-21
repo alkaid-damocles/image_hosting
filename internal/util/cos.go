@@ -19,6 +19,7 @@ const (
 	SystemType   = "linux"
 )
 
+// UploadToCos 上传到腾讯云cos
 func UploadToCos(filePath string) string {
 	ctx := context.Background()
 	u, _ := url.Parse(CosBucketURL)
@@ -59,6 +60,7 @@ func UploadToCos(filePath string) string {
 	return fmt.Sprint(presignedURL)
 }
 
+// FileNameFormat 路径格式化,使用年月日区分
 func FileNameFormat(filePath string) string {
 	fileName := filePath
 	switch SystemType {
